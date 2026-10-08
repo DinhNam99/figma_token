@@ -1,0 +1,35 @@
+#!/bin/sh
+# Pre-commit hook: block commits when lib/generated is stale.
+#
+# Enable once per clone:
+#   git config core.hooksPath tool/hooks
+#   chmod +x tool/hooks/pre-commit
+#
+# Bypass with: git commit --no-verify
+#
+# Uses the offline fixture by default so it works without a Figma token.
+# To gate on the real Figma file instead, set FIGMA_TOKEN / FILE_KEY in your
+# environment (or .env) and drop the --source argument.
+set -eu
+
+root="$(git rev-parse --show-toplevel)"
+cd "$root"
+
+# Only fail when generated files or the generator itself are staged.
+if ! git diff --cached --quiet -- \
+  lib/generated lib/src/figma_gen bin tool figma_config.yaml; then
+  if ! command -v dart >/dev/null 2>&1; then
+    echo "pre-commit: dart not found on PATH; skipping token drift check." >&2
+    exit 0
+  fi
+
+  if ! dart run bin/figma_gen.dart \
+    --source tool/fixtures/variables.sample.json \
+    --check; then
+    echo "" >&2
+    echo "pre-commit: generated design tokens are stale." >&2
+    echo "Run: dart run bin/figma_gen.dart --source tool/fixtures/variables.sample.json" >&2
+    echo "and stage the changes (or commit with --no-verify)." >&2
+    exit 1
+  fi
+fi

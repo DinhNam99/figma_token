@@ -1,0 +1,694 @@
+{
+  "status": 200,
+  "error": false,
+  "meta": {
+    "variableCollections": {
+      "10:0": {
+        "id": "10:0",
+        "name": "Primitives",
+        "key": "1:00000000000000000000000000000000000000",
+        "modes": [
+          { "modeId": "10:2", "name": "Value" }
+        ],
+        "defaultModeId": "10:2",
+        "remote": false,
+        "hiddenFromPublishing": false,
+        "variableIds": [
+          "10:100",
+          "10:101",
+          "10:102",
+          "10:103",
+          "10:104",
+          "10:105",
+          "10:106",
+          "10:107",
+          "10:108",
+          "10:109",
+          "10:110",
+          "10:111",
+          "10:112",
+          "10:113",
+          "10:114",
+          "10:115",
+          "10:116",
+          "10:117",
+          "10:118",
+          "10:119",
+          "10:120",
+          "10:121",
+          "10:122"
+        ]
+      },
+      "10:1": {
+        "id": "10:1",
+        "name": "Semantic",
+        "key": "1:00000000000000000000000000000000000001",
+        "modes": [
+          { "modeId": "10:3", "name": "Light" },
+          { "modeId": "10:4", "name": "Dark" }
+        ],
+        "defaultModeId": "10:3",
+        "remote": false,
+        "hiddenFromPublishing": false,
+        "variableIds": [
+          "10:200",
+          "10:201",
+          "10:202",
+          "10:203",
+          "10:204",
+          "10:205",
+          "10:206",
+          "10:207",
+          "10:208"
+        ]
+      },
+      "10:2": {
+        "id": "10:2",
+        "name": "Typography",
+        "key": "1:00000000000000000000000000000000000002",
+        "modes": [
+          { "modeId": "10:5", "name": "Value" }
+        ],
+        "defaultModeId": "10:5",
+        "remote": false,
+        "hiddenFromPublishing": false,
+        "variableIds": [
+          "10:300",
+          "10:301",
+          "10:302",
+          "10:303",
+          "10:304",
+          "10:305",
+          "10:306",
+          "10:307",
+          "10:308",
+          "10:309",
+          "10:310"
+        ]
+      }
+    },
+    "variables": {
+      "10:100": {
+        "id": "10:100",
+        "name": "color/blue/500",
+        "key": "1:00000000000000000000000000000000000100",
+        "variableCollectionId": "10:0",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "10:2": { "r": 0.1843137254901961, "g": 0.43529411764705883, "b": 0.9294117647058824, "a": 1 }
+        },
+        "remote": false,
+        "description": "Primary brand blue",
+        "hiddenFromPublishing": false,
+        "scopes": ["ALL_SCOPES"],
+        "codeSyntax": {}
+      },
+      "10:101": {
+        "id": "10:101",
+        "name": "color/blue/600",
+        "key": "1:00000000000000000000000000000000000101",
+        "variableCollectionId": "10:0",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "10:2": { "r": 0.30980392156862746, "g": 0.5490196078431373, "b": 1, "a": 1 }
+        },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["ALL_SCOPES"],
+        "codeSyntax": {}
+      },
+      "10:102": {
+        "id": "10:102",
+        "name": "color/gray/950",
+        "key": "1:00000000000000000000000000000000000102",
+        "variableCollectionId": "10:0",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "10:2": { "r": 0.043137254901960784, "g": 0.07058823529411765, "b": 0.12549019607843137, "a": 1 }
+        },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["ALL_SCOPES"],
+        "codeSyntax": {}
+      },
+      "10:103": {
+        "id": "10:103",
+        "name": "color/gray/900",
+        "key": "1:00000000000000000000000000000000000103",
+        "variableCollectionId": "10:0",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "10:2": { "r": 0.06666666666666667, "g": 0.09411764705882353, "b": 0.15294117647058825, "a": 1 }
+        },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["ALL_SCOPES"],
+        "codeSyntax": {}
+      },
+      "10:104": {
+        "id": "10:104",
+        "name": "color/gray/700",
+        "key": "1:00000000000000000000000000000000000104",
+        "variableCollectionId": "10:0",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "10:2": { "r": 0.21568627450980393, "g": 0.2549019607843137, "b": 0.3176470588235294, "a": 1 }
+        },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["ALL_SCOPES"],
+        "codeSyntax": {}
+      },
+      "10:105": {
+        "id": "10:105",
+        "name": "color/gray/100",
+        "key": "1:00000000000000000000000000000000000105",
+        "variableCollectionId": "10:0",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "10:2": { "r": 0.9529411764705882, "g": 0.9568627450980393, "b": 0.9647058823529412, "a": 1 }
+        },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["ALL_SCOPES"],
+        "codeSyntax": {}
+      },
+      "10:106": {
+        "id": "10:106",
+        "name": "color/white",
+        "key": "1:00000000000000000000000000000000000106",
+        "variableCollectionId": "10:0",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "10:2": { "r": 1, "g": 1, "b": 1, "a": 1 }
+        },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["ALL_SCOPES"],
+        "codeSyntax": {}
+      },
+      "10:107": {
+        "id": "10:107",
+        "name": "color/red/500",
+        "key": "1:00000000000000000000000000000000000107",
+        "variableCollectionId": "10:0",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "10:2": { "r": 0.8627450980392157, "g": 0.14901960784313725, "b": 0.14901960784313725, "a": 1 }
+        },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["ALL_SCOPES"],
+        "codeSyntax": {}
+      },
+      "10:108": {
+        "id": "10:108",
+        "name": "spacing/4",
+        "key": "1:00000000000000000000000000000000000108",
+        "variableCollectionId": "10:0",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:2": 4 },
+        "remote": false,
+        "description": "4 px",
+        "hiddenFromPublishing": false,
+        "scopes": ["GAP"],
+        "codeSyntax": {}
+      },
+      "10:109": {
+        "id": "10:109",
+        "name": "spacing/8",
+        "key": "1:00000000000000000000000000000000000109",
+        "variableCollectionId": "10:0",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:2": 8 },
+        "remote": false,
+        "description": "8 px",
+        "hiddenFromPublishing": false,
+        "scopes": ["GAP"],
+        "codeSyntax": {}
+      },
+      "10:110": {
+        "id": "10:110",
+        "name": "spacing/16",
+        "key": "1:00000000000000000000000000000000000110",
+        "variableCollectionId": "10:0",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:2": 16 },
+        "remote": false,
+        "description": "16 px",
+        "hiddenFromPublishing": false,
+        "scopes": ["GAP"],
+        "codeSyntax": {}
+      },
+      "10:111": {
+        "id": "10:111",
+        "name": "spacing/24",
+        "key": "1:00000000000000000000000000000000000111",
+        "variableCollectionId": "10:0",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:2": 24 },
+        "remote": false,
+        "description": "24 px",
+        "hiddenFromPublishing": false,
+        "scopes": ["GAP"],
+        "codeSyntax": {}
+      },
+      "10:112": {
+        "id": "10:112",
+        "name": "spacing/32",
+        "key": "1:00000000000000000000000000000000000112",
+        "variableCollectionId": "10:0",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:2": 32 },
+        "remote": false,
+        "description": "32 px",
+        "hiddenFromPublishing": false,
+        "scopes": ["GAP"],
+        "codeSyntax": {}
+      },
+      "10:113": {
+        "id": "10:113",
+        "name": "radius/sm",
+        "key": "1:00000000000000000000000000000000000113",
+        "variableCollectionId": "10:0",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:2": 4 },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["CORNER_RADIUS"],
+        "codeSyntax": {}
+      },
+      "10:114": {
+        "id": "10:114",
+        "name": "radius/md",
+        "key": "1:00000000000000000000000000000000000114",
+        "variableCollectionId": "10:0",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:2": 8 },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["CORNER_RADIUS"],
+        "codeSyntax": {}
+      },
+      "10:115": {
+        "id": "10:115",
+        "name": "radius/lg",
+        "key": "1:00000000000000000000000000000000000115",
+        "variableCollectionId": "10:0",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:2": 16 },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["CORNER_RADIUS"],
+        "codeSyntax": {}
+      },
+      "10:116": {
+        "id": "10:116",
+        "name": "radius/full",
+        "key": "1:00000000000000000000000000000000000116",
+        "variableCollectionId": "10:0",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:2": 999 },
+        "remote": false,
+        "description": "Pill shape",
+        "hiddenFromPublishing": false,
+        "scopes": ["CORNER_RADIUS"],
+        "codeSyntax": {}
+      },
+      "10:117": {
+        "id": "10:117",
+        "name": "size/icon/sm",
+        "key": "1:00000000000000000000000000000000000117",
+        "variableCollectionId": "10:0",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:2": 16 },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["WIDTH_HEIGHT"],
+        "codeSyntax": {}
+      },
+      "10:118": {
+        "id": "10:118",
+        "name": "size/icon/md",
+        "key": "1:00000000000000000000000000000000000118",
+        "variableCollectionId": "10:0",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:2": 24 },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["WIDTH_HEIGHT"],
+        "codeSyntax": {}
+      },
+      "10:119": {
+        "id": "10:119",
+        "name": "shadow/1/x",
+        "key": "1:00000000000000000000000000000000000119",
+        "variableCollectionId": "10:0",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:2": 0 },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": [],
+        "codeSyntax": {}
+      },
+      "10:120": {
+        "id": "10:120",
+        "name": "shadow/1/y",
+        "key": "1:00000000000000000000000000000000000120",
+        "variableCollectionId": "10:0",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:2": 2 },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": [],
+        "codeSyntax": {}
+      },
+      "10:121": {
+        "id": "10:121",
+        "name": "shadow/1/blur",
+        "key": "1:00000000000000000000000000000000000121",
+        "variableCollectionId": "10:0",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:2": 8 },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": [],
+        "codeSyntax": {}
+      },
+      "10:122": {
+        "id": "10:122",
+        "name": "shadow/1/color",
+        "key": "1:00000000000000000000000000000000000122",
+        "variableCollectionId": "10:0",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "10:2": { "r": 0, "g": 0, "b": 0, "a": 0.15000000000000002 }
+        },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": [],
+        "codeSyntax": {}
+      },
+      "10:200": {
+        "id": "10:200",
+        "name": "color/accent",
+        "key": "1:00000000000000000000000000000000000200",
+        "variableCollectionId": "10:1",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "10:3": { "type": "VARIABLE_ALIAS", "id": "10:100" },
+          "10:4": { "type": "VARIABLE_ALIAS", "id": "10:101" }
+        },
+        "remote": false,
+        "description": "Accent, points at primitives",
+        "hiddenFromPublishing": false,
+        "scopes": ["ALL_SCOPES"],
+        "codeSyntax": {}
+      },
+      "10:201": {
+        "id": "10:201",
+        "name": "color/primary",
+        "key": "1:00000000000000000000000000000000000201",
+        "variableCollectionId": "10:1",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "10:3": { "type": "VARIABLE_ALIAS", "id": "10:200" },
+          "10:4": { "type": "VARIABLE_ALIAS", "id": "10:200" }
+        },
+        "remote": false,
+        "description": "Primary action color (2-hop alias chain)",
+        "hiddenFromPublishing": false,
+        "scopes": ["ALL_SCOPES"],
+        "codeSyntax": {}
+      },
+      "10:202": {
+        "id": "10:202",
+        "name": "color/on-primary",
+        "key": "1:00000000000000000000000000000000000202",
+        "variableCollectionId": "10:1",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "10:3": { "type": "VARIABLE_ALIAS", "id": "10:106" },
+          "10:4": { "type": "VARIABLE_ALIAS", "id": "10:106" }
+        },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["ALL_SCOPES"],
+        "codeSyntax": {}
+      },
+      "10:203": {
+        "id": "10:203",
+        "name": "color/background",
+        "key": "1:00000000000000000000000000000000000203",
+        "variableCollectionId": "10:1",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "10:3": { "type": "VARIABLE_ALIAS", "id": "10:106" },
+          "10:4": { "type": "VARIABLE_ALIAS", "id": "10:102" }
+        },
+        "remote": false,
+        "description": "Scaffold background",
+        "hiddenFromPublishing": false,
+        "scopes": ["ALL_SCOPES"],
+        "codeSyntax": {}
+      },
+      "10:204": {
+        "id": "10:204",
+        "name": "color/on-background",
+        "key": "1:00000000000000000000000000000000000204",
+        "variableCollectionId": "10:1",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "10:3": { "type": "VARIABLE_ALIAS", "id": "10:103" },
+          "10:4": { "type": "VARIABLE_ALIAS", "id": "10:105" }
+        },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["ALL_SCOPES"],
+        "codeSyntax": {}
+      },
+      "10:205": {
+        "id": "10:205",
+        "name": "color/surface",
+        "key": "1:00000000000000000000000000000000000205",
+        "variableCollectionId": "10:1",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "10:3": { "type": "VARIABLE_ALIAS", "id": "10:106" },
+          "10:4": { "type": "VARIABLE_ALIAS", "id": "10:104" }
+        },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["ALL_SCOPES"],
+        "codeSyntax": {}
+      },
+      "10:206": {
+        "id": "10:206",
+        "name": "color/error",
+        "key": "1:00000000000000000000000000000000000206",
+        "variableCollectionId": "10:1",
+        "resolvedType": "COLOR",
+        "valuesByMode": {
+          "10:3": { "type": "VARIABLE_ALIAS", "id": "10:107" },
+          "10:4": { "type": "VARIABLE_ALIAS", "id": "10:107" }
+        },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["ALL_SCOPES"],
+        "codeSyntax": {}
+      },
+      "10:207": {
+        "id": "10:207",
+        "name": "string/app-name",
+        "key": "1:00000000000000000000000000000000000207",
+        "variableCollectionId": "10:1",
+        "resolvedType": "STRING",
+        "valuesByMode": {
+          "10:3": "Figma Tokens",
+          "10:4": "Figma Tokens"
+        },
+        "remote": false,
+        "description": "Displayed application name",
+        "hiddenFromPublishing": false,
+        "scopes": ["TEXT_CONTENT"],
+        "codeSyntax": {}
+      },
+      "10:208": {
+        "id": "10:208",
+        "name": "feature/enable-beta",
+        "key": "1:00000000000000000000000000000000000208",
+        "variableCollectionId": "10:1",
+        "resolvedType": "BOOLEAN",
+        "valuesByMode": { "10:3": true, "10:4": true },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": [],
+        "codeSyntax": {}
+      },
+      "10:300": {
+        "id": "10:300",
+        "name": "font/family",
+        "key": "1:00000000000000000000000000000000000300",
+        "variableCollectionId": "10:2",
+        "resolvedType": "STRING",
+        "valuesByMode": { "10:5": "Inter" },
+        "remote": false,
+        "description": "Brand typeface",
+        "hiddenFromPublishing": false,
+        "scopes": ["FONT_FAMILY"],
+        "codeSyntax": {}
+      },
+      "10:301": {
+        "id": "10:301",
+        "name": "typography/heading/h1/font-size",
+        "key": "1:00000000000000000000000000000000000301",
+        "variableCollectionId": "10:2",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:5": 32 },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["FONT_SIZE"],
+        "codeSyntax": {}
+      },
+      "10:302": {
+        "id": "10:302",
+        "name": "typography/heading/h1/line-height",
+        "key": "1:00000000000000000000000000000000000302",
+        "variableCollectionId": "10:2",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:5": 40 },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["LINE_HEIGHT"],
+        "codeSyntax": {}
+      },
+      "10:303": {
+        "id": "10:303",
+        "name": "typography/heading/h1/weight",
+        "key": "1:00000000000000000000000000000000000303",
+        "variableCollectionId": "10:2",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:5": 700 },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["FONT_WEIGHT"],
+        "codeSyntax": {}
+      },
+      "10:304": {
+        "id": "10:304",
+        "name": "typography/heading/h1/letter-spacing",
+        "key": "1:00000000000000000000000000000000000304",
+        "variableCollectionId": "10:2",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:5": -0.5 },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["LETTER_SPACING"],
+        "codeSyntax": {}
+      },
+      "10:305": {
+        "id": "10:305",
+        "name": "typography/heading/h1/color",
+        "key": "1:00000000000000000000000000000000000305",
+        "variableCollectionId": "10:2",
+        "resolvedType": "COLOR",
+        "valuesByMode": { "10:5": { "type": "VARIABLE_ALIAS", "id": "10:201" } },
+        "remote": false,
+        "description": "Inherits the semantic primary color",
+        "hiddenFromPublishing": false,
+        "scopes": ["ALL_SCOPES"],
+        "codeSyntax": {}
+      },
+      "10:306": {
+        "id": "10:306",
+        "name": "typography/body/regular/font-size",
+        "key": "1:00000000000000000000000000000000000306",
+        "variableCollectionId": "10:2",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:5": 16 },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["FONT_SIZE"],
+        "codeSyntax": {}
+      },
+      "10:307": {
+        "id": "10:307",
+        "name": "typography/body/regular/line-height",
+        "key": "1:00000000000000000000000000000000000307",
+        "variableCollectionId": "10:2",
+        "resolvedType": "FLOAT",
+        "valuesByMode": { "10:5": 24 },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["LINE_HEIGHT"],
+        "codeSyntax": {}
+      },
+      "10:308": {
+        "id": "10:308",
+        "name": "typography/body/regular/weight",
+        "key": "1:00000000000000000000000000000000000308",
+        "variableCollectionId": "10:2",
+        "resolvedType": "STRING",
+        "valuesByMode": { "10:5": "Regular" },
+        "remote": false,
+        "description": "",
+        "hiddenFromPublishing": false,
+        "scopes": ["FONT_WEIGHT"],
+        "codeSyntax": {}
+      },
+      "10:309": {
+        "id": "10:309",
+        "name": "typography/body/regular/family",
+        "key": "1:00000000000000000000000000000000000309",
+        "variableCollectionId": "10:2",
+        "resolvedType": "STRING",
+        "valuesByMode": { "10:5": { "type": "VARIABLE_ALIAS", "id": "10:300" } },
+        "remote": false,
+        "description": "Alias to font/family",
+        "hiddenFromPublishing": false,
+        "scopes": ["FONT_FAMILY"],
+        "codeSyntax": {}
+      },
+      "10:310": {
+        "id": "10:310",
+        "name": "typography/heading/h1/family",
+        "key": "1:00000000000000000000000000000000000310",
+        "variableCollectionId": "10:2",
+        "resolvedType": "STRING",
+        "valuesByMode": { "10:5": { "type": "VARIABLE_ALIAS", "id": "10:300" } },
+        "remote": false,
+        "description": "Inherits the shared typeface",
+        "hiddenFromPublishing": false,
+        "scopes": ["FONT_FAMILY"],
+        "codeSyntax": {}
+      }
+    }
+  }
+}

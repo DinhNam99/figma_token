@@ -1,0 +1,55 @@
+# Design token pipeline configuration.
+# Docs: docs/figma_codegen.md
+#
+# Token/secret resolution (never logged by the tool):
+#   FIGMA_TOKEN / FILE_KEY  ->  environment variables, then `env_file` (.env).
+#   The token needs the `file_variables:read` scope.
+
+# Figma file to read Variables from (optional if FILE_KEY is set in .env).
+file_key: ""
+
+# Where generated Dart files are written (relative to the project root).
+output_dir: lib/generated
+
+# Collections skipped entirely (exact names, case insensitive).
+excluded_collections: []
+# Non-empty = allowlist: only these collections are generated.
+included_collections: []
+
+# Alias chains deeper than this (or with cycles) are skipped with a warning.
+max_alias_depth: 32
+
+# Run `dart format` on the generated files (last pipeline step).
+format: true
+
+# Emit `GoogleFonts.getFont(...)` instead of `fontFamily:` in text styles.
+# Requires `flutter pub add google_fonts` when enabled.
+google_fonts: false
+
+# Fallback fontFamily for text styles that do not define one.
+default_font_family: null
+
+# Optional path to a cached raw API response (offline mode / fixtures).
+source: null
+
+# Optional custom header for generated files.
+# header: "// GENERATED CODE - DO NOT MODIFY BY HAND."
+
+# `.env` lookup for FIGMA_TOKEN / FILE_KEY.
+env_file: .env
+
+# Figma mode names used for ThemeData.light() / ThemeData.dark().
+theme:
+  light_mode: "Light"
+  dark_mode: "Dark"
+
+# Category keywords. A token's `/`-separated path is matched against these
+# (lowercase, `_` ignored); the first matching category in this priority
+# order wins: shadow -> typography -> spacing -> radius -> size.
+categories:
+  spacing: [spacing, space, gap, gutter, inset, padding, margin]
+  radius: [radius, corner, rounded]
+  size: [size, dimension, width, height, icon, stroke]
+  typography:
+    [typography, font, fontsize, lineheight, letterspacing, tracking, weight, family, leading]
+  shadow: [shadow, elevation, blur, dropshadow]

@@ -1,0 +1,61 @@
+# Design token pipeline checks.
+#
+# Two modes:
+#   1. Default (this file): offline drift gate against the checked-in fixture.
+#      No secrets required.
+#   2. Real Figma file: uncomment the "live" step, add repository secrets
+#      FIGMA_TOKEN and FILE_KEY (token needs the `file_variables:read` scope),
+#      and remove `--source ...`.
+#
+# Docs: docs/figma_codegen.md
+name: figma-tokens
+
+on:
+  pull_request:
+    paths:
+      - "lib/generated/**"
+      - "lib/src/figma_gen/**"
+      - "bin/**"
+      - "tool/**"
+      - "figma_config.yaml"
+      - ".github/workflows/figma-tokens.yml"
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    name: Generate & check drift
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      # Exit code 2 = generated files on disk differ from a fresh run.
+      - name: Check generated tokens are up to date
+        run: >-
+          dart run bin/figma_gen.dart
+          --source tool/fixtures/variables.sample.json
+          --check
+
+      # -- Live mode (needs FIGMA_TOKEN + FILE_KEY repository secrets) --
+      # - name: Check generated tokens are up to date (live Figma file)
+      #   env:
+      #     FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+      #     FILE_KEY: ${{ secrets.FILE_KEY }}
+      #   run: dart run bin/figma_gen.dart --check
+
+      - name: Analyze
+        run: dart analyze
+
+      - name: Tests
+        run: flutter test
+
+      - name: Format
+        run: dart format --output=none --set-exit-if-changed .
